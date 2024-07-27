@@ -1,15 +1,16 @@
 //Question 1
+console.log("Question 1");
 for(let i=2; i<101; i+=2) {
     console.log(i);
 }
-
+console.log("Question 2");
 //Question 2
 for(let i=1; i<200; i+=2) {
     console.log(i);
 }
-
+console.log("Question 3");
 //Question 3
-const prime = prompt('Enter a number to check if it is a prime number or not: ');
+const prime = 9;
 
 if(prime == 1) {
     console.log(`${prime} cannot be a prime number`);
@@ -29,27 +30,31 @@ if(prime == 1) {
         console.log(`${prime} is not a prime number`);
     }
 }
-
+console.log("Question 4");
 //Question 4
-for (let i =1; i<200; i++) {
-    for(let j = 2; j<i; j++) {
-        if(i%j === 0) {
-            break;
-        } else {
-            console.log(i);
+for(let i=1; i<100; i++) {
+    let isPrime = true;
+    for (let j = 2; j < i; j++) {
+        if (i % j === 0) {
+            isPrime = false;
             break;
         }
     }
+    if (isPrime) {
+        console.log(i);
+    }
 }
 //Question 5
-
-for (let i =1; i<100; i++) {
-    for(let j = 2; j<i; j++) {
-        if(i%j === 0) {
-            break;
-        } else {
-            console.log(i);
+console.log("Question 5");
+for(let i=1; i<542; i++) {
+    let isPrime = true;
+    for (let j = 2; j < i; j++) {
+        if (i % j === 0) {
+            isPrime = false;
             break;
         }
+    }
+    if (isPrime) {
+        console.log(i);
     }
 }
