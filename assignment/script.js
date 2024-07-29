@@ -46,15 +46,21 @@ for(let i=1; i<100; i++) {
 }
 //Question 5
 console.log("Question 5");
-for(let i=1; i<542; i++) {
+let count = 0;
+let num = 2;
+
+while(count < 100) {
     let isPrime = true;
-    for (let j = 2; j < i; j++) {
-        if (i % j === 0) {
+    for (let j = 2; j < num; j++) {
+        if (num % j === 0) {
             isPrime = false;
             break;
         }
     }
     if (isPrime) {
-        console.log(i);
+        console.log(num);
+        count++;
     }
+    num++;
 }
+
