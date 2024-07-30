@@ -97,6 +97,25 @@ function factorial () {
 factorial();
 
 //Question 3
-console.log("Question 3")
+console.log("Question 3");
+
+const par = (num) => {
+    let copy = num;
+    let reverseNumber = 0;
+
+    while(copy) {
+        const remain = copy % 10;
+        copy = (copy - remain) / 10;  
+        reverseNumber = reverseNumber * 10 + remain;
+    }
+
+    if (reverseNumber === num) {
+        return "palindrome";
+    }
+    return "not palindrome";
+};
+
+console.log(par(121));    
+console.log(par(12123));  
 
 
